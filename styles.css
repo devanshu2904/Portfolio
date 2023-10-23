@@ -1,0 +1,244 @@
+/* navabar / universal  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+body {
+    font-family:'Poppins','sans-serif';
+    /* background-color: white;
+    color: black; */
+}
+    /*.dark-mode {
+    background-color: black;
+    color: white;
+  } */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    position:relative;  
+    border-bottom:5px solid rgb(3, 109, 3);
+}
+.left{
+    text-align: left;
+    margin-left:100px;
+    font-family:'raleway','sans-serif';
+    margin-top: 5px;
+}
+
+.header-content {
+    margin-top: 5px;
+    max-width:fit-content;
+    margin-left:550px;
+}
+/* about section */
+#about {
+    /* background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size:auto; */
+    background-color: #f4f4f4;
+    border-radius:20px;
+    padding: 100px 0;
+    display:flex;
+    justify-content:space-around;
+    margin:0px;
+}
+
+.about-section-content {
+    width: 40%; 
+    margin: 0 auto;
+    margin-top:80px;
+    margin-left:100px;
+    text-align: left;
+    
+}
+.name{
+    font-size: 60px;
+    font-family:'Raleway','sans-serif';
+}
+.intro{
+    width:80%;
+    font-size: 25px;
+    font-family:'Poppins','sans-serif';
+}
+
+.profile-image {
+    max-width: 450px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-right:8%;
+    border:6px solid rgb(3, 109, 3);
+}
+
+.bio {
+    margin-left: 50px;
+}
+
+
+/* skills section */
+#skills {
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    width:90%;
+    height:400px;      /*500px or 600px for more content*/
+    /* margin-top: 5%; */
+    margin-left: 5%;
+}
+  .headings{
+    font-size:60px;
+    font-family:'Raleway','sans-serif';
+    text-align: center;
+  }
+  .skills-section-content{
+    display:flex;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 20px;
+    margin:10px;
+}
+  .skills-section-content> div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+.logo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    margin:10px;
+    transition: 0.4s;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .logo:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  }
+
+/* projects section */
+#projects {
+    background-color: #f4f4f4;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 20px;
+    padding: 40px 0;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+  }
+  
+  .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+  }
+  
+  @media (max-width: 28.75em) {
+    .projects-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  /* "Automagic" image grid using no media queries */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+   
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 1rem;
+    padding: 2rem 0.5rem;
+  }
+.project {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+}
+a:link{
+    color:blue;
+    text-decoration:none;
+    font-family:'Poppins','sans-serif';
+}
+a:hover {
+    color:black;
+  }
+/* resume section */
+.connectwithme{
+    display:flex;
+}
+
+#resume {
+    padding: 40px 0;
+    text-align: left;
+    margin-left: 60px;
+    width:50%;
+    margin-top:10px;
+}
+
+/* contact section */
+#connect {
+    padding: 40px 0;
+    text-align: right;
+    margin-right: 60px;
+    width:50%;
+}
+.connectwithme h2{
+    font-family: 'Raleway','sans-serif';
+    font-size: 40px;
+} 
+.connectwithme p{
+    font-family: 'poppins','sans-serif';
+    font-size: 20px;
+} 
+.connectlogo{
+    margin:10px;
+}
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top:5px solid rgb(3, 109, 3);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
